@@ -1,0 +1,12 @@
+m10 + Tab = margin: 10px;
+p10 + Tab = padding: 10px;
+bgc + Tab = background-color:
+bgi + Tab = background-image: url();
+
+border: 1px solid red;
+
+[свойство шрифта] font-family: 'Joan', serif;
+
+* {
+    box-sizing: border-box;
+  }
