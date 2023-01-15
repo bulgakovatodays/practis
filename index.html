@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!--общие настройки-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--подключили стили и фавиконку-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/img/fox.ico">
+<!--добавили заглавие-->
+    <title>CV</title>
+<!--код для шрифта Joan -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+
+</head>
+
+<body {min-height: 100vh}>
+    <header class = "header">
+      <div class="container header-container">
+    <!--блок навигации по странице-->
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+          <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+          <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#english" class="nav-link">English</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+    
+    <main>
+         
+        CV Olesya Makarova
+
+          <div>Contacts:
+          <ul>
+          <li>phone: +380633216088</li>
+          <li>rs-nickname: bulgakovatodays</li>
+          <li>telegram: @bulgakovatodays</li>
+          </ul>
+                  
+          Summary
+          I am a lawyer from Kharkov. I thought about learning programming and programming languages for a long time, so the february events encourage me to start learning. I haven`t a lot of knowledge now, but I want to study and learn.
+                  
+          Skills:
+          basics HTML и JavaSkript
+                  
+          Code examples:
+          <code><pre>
+          export const checkSpam = (text, spamKeywords) => 
+          {
+          //1 перевести всё в малый регистр
+            let lowText = text.toLowerCase();
+          //2 убрать всё, кроме букв
+            lowText = lowText.replace(/[^a-zа-яё\s]/gi, '');
+            lowText = lowText.replace(/\s+/g, ' ');
+            console.log(lowText);
+          //3 проверяем каждое слово и формируем массив результатов
+          var spam = [];
+          for (let i = 0; i < spamKeywords.length; i++)
+            {
+            spam.push (lowText.includes(spamKeywords[i]));
+            console.log (spam.length);
+            console.log (spam)
+            }
+          //4 проверяем 
+          spam = spam.join(' ');
+          let result = spam.includes('true');
+          return result
+          }
+          </pre></code>
+                  
+          Work experience:
+          At this moment I have done only this CV.
+                  
+          Education:
+          This course de facto is my first.
+                  
+          English level:
+          A2-B1 (pre-intermediate)
+
+    </main>
+    <footer>
+        <img src="./assets/img/image.jpg" alt="my photo">
+    </footer>
+</body>
+</html>
